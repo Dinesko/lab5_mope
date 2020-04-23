@@ -3,6 +3,7 @@ import sklearn.linear_model as lm
 from scipy.stats import f, t
 from functools import partial
 from pyDOE2 import *
+import time
 
 
 def regression(x, b):
@@ -231,3 +232,8 @@ def main(n, m):
 
 if __name__ == '__main__':
     main(15, 6)
+
+start_time = time.time()
+for _ in range(100):
+        main(15, 6)
+print(f'\nСередній час виконання одного проходження програми: {((time.time() - start_time) / 100)} секунд')
