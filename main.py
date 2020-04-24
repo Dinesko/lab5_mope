@@ -236,4 +236,4 @@ if __name__ == '__main__':
 start_time = time.time()
 for _ in range(100):
         main(15, 6)
-print(f'\nСередній час виконання одного проходження програми: {((time.time() - start_time) / 100)} секунд')
+print(f'\nСередній час роботи 1 проходження програми: {((time.time() - start_time) / 100)} секунд')
