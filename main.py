@@ -220,7 +220,6 @@ def check(X, Y, B, n, m):
     else:
         print('Математична модель не адекватна експериментальним даним')
 
-
 def main(n, m):
     X5, Y5, X5_norm = plan_matrix5(n, m)
 
@@ -229,11 +228,10 @@ def main(n, m):
 
     check(X5_norm, Y5, B5, n, m)
 
-
 if __name__ == '__main__':
     main(15, 6)
 
-start_time = time.time()
+st_time = time.time()
 for _ in range(100):
         main(15, 6)
-print(f'\nСередній час роботи 1 проходження програми: {((time.time() - start_time) / 100)} секунд')
+print(f'\nСередній час роботи 1 проходження програми: {((time.time() - st_time) / 100)} сек')
