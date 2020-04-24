@@ -228,5 +228,6 @@ def main(n, m):
 
     check(X5_norm, Y5, B5, n, m)
 
+
 if __name__ == '__main__':
     main(15, 6)
